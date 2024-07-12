@@ -1,0 +1,77 @@
+.tree {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 20px; /* Indentation for nested lists */
+}
+
+ul ul {
+  margin-left: 10px; /* Additional indentation for deeper levels */
+  position: relative;
+}
+
+ul ul::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -10px;
+  bottom: 0;
+  width: 1px;
+  background: #ccc; /* Vertical line */
+}
+
+li {
+  margin: 0;
+  padding: 5px 0;
+  position: relative;
+}
+
+li::before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: -20px;
+  width: 2px;
+  height: 1px;
+  background: #ccc; /* Horizontal line */
+}
+li::before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: -20px;
+  width: 0px;
+  height: 0px;
+  background: #ccc; /* Horizontal line */
+  display: none;
+}
+li:last-child::before {
+  height: auto;
+  bottom: 12px;
+}
+
+.folderToggle {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.folderIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.folderName {
+  font-weight: bold;
+}
+
+.fileComponent {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  cursor: pointer;
+}

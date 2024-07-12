@@ -1,0 +1,16 @@
+/* FileComponent.module.css */
+
+.fileComponent {
+  display: flex;
+  align-items: center;
+}
+
+.fileIcon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.fileName {
+  font-size: 16px;
+}

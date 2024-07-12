@@ -1,0 +1,41 @@
+@import url('../shared/styles/variables/variables');
+@import url('../shared/styles/hotNewsStyle');
+@import url('../shared/styles/sliderStyle');
+@import url('../shared/styles/styles');
+@import url('../shared/styles/cardPallet.style');
+@import url('../shared/styles/search.style.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+#root {
+  font-family: Arial, Helvetica, sans-serif;
+}
+a:hover {
+  transition: all .15s ease-in-out !important;
+}
+.app {
+  height: calc(100vh - 120px);
+}
+/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
+
+
+
+
+
+
